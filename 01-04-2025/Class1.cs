@@ -145,11 +145,12 @@ namespace _01_04_2025
             {
                 result.AppendLine(ele.Category.Name + "\t" + ele.Name + "\t" + ele.Id);
             }
-
             MessageBox.Show("Tất cả các materials trong project là:\r\n" + result.ToString());
-
-
-
+            MessageBox.Show("Số lượng tường: " + selectedWallIds.Count.ToString() + "\n"
+                + "Số lượng cột: " + columnCount.ToString() + "\n"
+                + "Số lượng dầm: " + beamCount.ToString() + "\n"
+                + "Số lượng sàn: " + selectedFloorIds.Count.ToString() + "\n"
+                + "Số lượng cửa sổ: " + windowCount.ToString());
             return Result.Succeeded;
         }
     }
